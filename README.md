@@ -81,7 +81,7 @@ The analytic condition IS the Knill-Laflamme condition, viewed through a differe
 
 Cauchy's residue theorem:
 
-$$\frac{1}{2\pi i} \oint_C f(z)\, dz = \sum_{k=1}^{n} \operatorname{Res}_{z=a_k} f(z)$$
+$$\frac{1}{2\pi i} \oint_C f(z)\, dz = \sum_{k=1}^{n} \ {Res}_{z=a_k} f(z)$$
 
 The contour integral over a closed boundary equals the sum of residues at all poles enclosed within. For a simple pole at $a$, the residue is the coefficient $B_1$ in the Laurent expansion:
 
@@ -180,7 +180,7 @@ Cauchy's completeness theorem: in a complete metric space, a sequence converges 
 
 **Identity C5 — The Ryu-Takayanagi surface IS the Cauchy limit of the Fisher flow, and its existence is guaranteed by Cauchy's completeness theorem.**
 
-The Fisher flow $\partial \gamma / \partial t = \nabla_\gamma \operatorname{Tr}(F|_\gamma)$ generates a sequence of boundary surfaces $\{\gamma_t\}$. This sequence IS a Cauchy sequence in the Fisher-Rao metric: consecutive surfaces differ by less than $\varepsilon$ after sufficient flow time. The RT minimal surface IS the Cauchy limit — the point at which the sequence converges.
+The Fisher flow $\partial \gamma / \partial t = \nabla_\gamma \ {Tr}(F|_\gamma)$ generates a sequence of boundary surfaces $\{\gamma_t\}$. This sequence IS a Cauchy sequence in the Fisher-Rao metric: consecutive surfaces differ by less than $\varepsilon$ after sufficient flow time. The RT minimal surface IS the Cauchy limit — the point at which the sequence converges.
 
 The existence of the RT surface is guaranteed by the **completeness of the Fisher-Rao metric space** — which is guaranteed by Cauchy's completeness theorem: a complete metric space contains the limit of every Cauchy sequence. Without Cauchy's 1821 completeness criterion, the formula $S_A = \text{Area}(\gamma_A)/4G_N$ has no guarantee that $\gamma_A$ exists as a well-defined object. With it: the Fisher flow is a Cauchy sequence; the metric space is complete; the RT surface is its limit; the formula is rigorous.
 
@@ -231,7 +231,7 @@ with equality if and only if $u$ and $v$ are linearly dependent.
 | Language | Statement | Equality Condition |
 |:---|:---|:---|
 | Cauchy-Schwarz (inner product, 1821) | $\|\langle u, v \rangle\|^2 \leq \|u\|^2 \|v\|^2$ | $u \parallel v$ |
-| Cramér-Rao (statistics, 1945–1946) | $\operatorname{Var}(\hat{\theta}) \cdot F(\theta) \geq 1$ | MLE on col(F) |
+| Cramér-Rao (statistics, 1945–1946) | $\ {Var}(\hat{\theta}) \cdot F(\theta) \geq 1$ | MLE on col(F) |
 | Holographic (quantum gravity, 2006) | $S_A \cdot 4G_N \leq \text{Area}(\gamma)$ for any $\gamma$ spanning $\partial A$ | $\gamma = \gamma_A$ (RT surface) |
 
 Equality holds — the bound is saturated — at the RT minimal surface, on col(F), at the $\varphi$-equilibrium. The golden ratio appears as the optimal ratio of $\|u\|$ to $\|v\|$ in the Fisher-optimal sense: the point on the Cauchy-Schwarz equality surface where Fisher information per unit resource is maximized.
@@ -403,7 +403,7 @@ For $M = 95$: $D_{\text{Cauchy}} = \lceil \log_\varphi(95) \rceil = \lceil 9.74 
 ### P-C4: The Residue of the Sgr A* Spectral Function at $\omega^* = \omega_0 \cdot \varphi$
 The spectral energy distribution of the 22.5° wind cone has a Cauchy pole at the Fisher-optimal frequency $\omega^* = \omega_0 \cdot \varphi$, with residue:
 
-$$\operatorname{Res}_{\omega = \omega^*} S(\omega) = \frac{k_B T_{\text{cone}}}{2\pi} \cdot \log\varphi$$
+$$\ {Res}_{\omega = \omega^*} S(\omega) = \frac{k_B T_{\text{cone}}}{2\pi} \cdot \log\varphi$$
 
 where $T_{\text{cone}}$ is the boundary-gas temperature. Testable by ALMA high-resolution spectroscopy of the 22.5° cone boundary in the CO(2-1) and CO(3-2) lines.
 
@@ -424,7 +424,7 @@ The CAUCHY machine is the complex-analytic boundary engine of the ERI Labs progr
 
 **Layer 1 — The Analytic Classifier.** Tests the Cauchy-Riemann conditions at each boundary point. Maps the col(F) region (C-R satisfied, holomorphic) from the ker(F) region (C-R violated, singular).
 
-**Layer 2 — The Residue Extractor.** Computes Cauchy residues at all ker(F) poles. Each residue IS a Fisher information atom. The sum $\sum_k \operatorname{Res}_{a_k}$ IS the total ker(F) content.
+**Layer 2 — The Residue Extractor.** Computes Cauchy residues at all ker(F) poles. Each residue IS a Fisher information atom. The sum $\sum_k \ {Res}_{a_k}$ IS the total ker(F) content.
 
 **Layer 3 — The Interior Reconstructor.** Applies Cauchy's integral formula: $f(a) = (1/2\pi i) \oint_C f(z)/(z-a)\, dz$. Identifies the entanglement wedge — the set of interior points whose values are reconstructible from the boundary.
 
